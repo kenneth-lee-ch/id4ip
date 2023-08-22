@@ -292,6 +292,7 @@ class GraphModel():
                     # pick a node randomly to be chS
                     chS= random.choice(upper_half_graphnames) 
                     bn_with_S.addArc(s_str , chS) # S points to A
+                    ls_of_chS.append(chS)
                     s_name_list.append(s_str)
                     upper_half_graphnames.remove(chS)
             self.chS = ls_of_chS # update chS
